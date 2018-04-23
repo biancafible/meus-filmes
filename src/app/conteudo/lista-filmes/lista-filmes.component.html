@@ -4,6 +4,7 @@
       <h1 class="display-4">Nossa Lista de Filmes</h1>
       <p class="lead">Atividade - Curso Angular</p>
       <hr class="my-4">
+      <app-form-pesquisa (pesquisa)="carregaLista($event)" ></app-form-pesquisa>
       <app-filme-card (apaga)="apagarFilme($event)" [filme]="filme" *ngFor="let filme of listaFilmes"></app-filme-card>
     </div>
   </div>
